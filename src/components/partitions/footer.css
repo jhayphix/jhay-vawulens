@@ -1,0 +1,23 @@
+footer {
+  padding: 30px 0;
+  /* margin-top: 10rem; */
+}
+
+.nav-item a:hover {
+  color: var(--secondary-color) !important;
+}
+
+.footer-contact-icons a {
+  color: white;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+.footer-contact-icons:hover .trainers-icons a {
+  background: var(--accent-color-variant);
+}
+
+.footer-contact-icons a:hover {
+  color: var(--secondary-color);
+}

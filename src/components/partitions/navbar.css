@@ -1,0 +1,25 @@
+.navbar-nav a:hover {
+  color: var(--secondary-color) !important;
+}
+
+.navbar-nav .j-nav-active {
+  position: relative;
+}
+.navbar-nav .j-nav-active::before {
+  content: " ";
+  height: 1.2rem;
+  width: 1.2rem;
+  display: block;
+  background: var(--primary-color);
+  /* background-color: red; */
+  transform: rotate(45deg);
+  position: absolute;
+  margin-top: 2.3rem;
+  left: calc(50% - 0.6rem);
+}
+
+@media only screen and (max-width: 766px) {
+  #j-navbar-section .nav-item a.active {
+    border-bottom: none;
+  }
+}

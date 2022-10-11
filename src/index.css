@@ -1,13 +1,155 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary-hue: 210;
+  --grey-hue: 240;
+  --primary-color: hsl(var(--primary-hue), 100%, 50%);
+  --primary-color-variant: hsl(var(--primary-hue), 100%, 65%);
+  --secondary-color: #ffb116;
+  --accent-color: hsl(240, 48%, 15%);
+  --accent-color-variant: hsl(240, 44%, 25%);
+  --transition: all 500ms ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+section {
+  padding: 60px 0;
+}
+Link,
+a {
+  text-decoration: none;
+}
+
+/* ===================================== 
+===========                ============= 
+=========== Custom Classes ============= 
+===========                =============
+======================================== 
+*/
+.j-bg-primary {
+  background-color: var(--primary-color);
+}
+.j-bg-primary-variant {
+  background-color: var(--primary-color-variant);
+}
+.j-bg-secondary-color {
+  background: var(--secondary-color);
+}
+.j-bg-assent-color {
+  background: var(--accent-color);
+}
+.j-bg-assent-variant-color {
+  background: var(--accent-color-variant);
+}
+
+.j-text-primary {
+  color: var(--primary-color);
+}
+.j-text-primary-variant {
+  color: var(--primary-color-variant);
+}
+.j-text-secondary {
+  color: var(--secondary-color);
+}
+.j-text-accent {
+  color: var(--accent-color);
+}
+
+.j-img-overlay::after {
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.j-overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+/* ========================================= 
+===========                    ============= 
+=========== Components Classes ============= 
+===========                    =============
+============================================ 
+*/
+
+.j-fa-crown {
+  background-color: var(--accent-color-variant);
+  padding: 12px;
+  border-radius: 10px;
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+/* Primary-card */
+
+.j-primary-card {
+  background-color: var(--accent-color-variant);
+  cursor: default;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+.j-primary-card:hover {
+  background-color: var(--accent-color);
+  border: 1px solid rgb(236, 234, 234);
+}
+.j-primary-card .j-icon {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+.j-primary-card:hover .j-icon,
+.j-primary-card:hover .j-btn {
+  background-color: var(--secondary-color);
+  border: transparent;
+  color: #1f1f1f;
+}
+
+/* J-Card-2 */
+.j-card-2 {
+  background-color: var(--accent-color-variant);
+  cursor: default;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  position: relative;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+.j-card-2:hover {
+  background-color: var(--accent-color);
+  border: 1px solid rgb(236, 234, 234);
+}
+.j-card-2 .j-icon {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-right: 1rem;
+  font-size: 1rem;
+  position: absolute;
+  left: 2rem;
+  top: -1rem;
+}
+.j-card-2:hover .j-icon {
+  background-color: var(--secondary-color);
+  border: transparent;
+  color: #1f1f1f;
 }

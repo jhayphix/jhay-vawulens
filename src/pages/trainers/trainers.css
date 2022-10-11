@@ -1,0 +1,31 @@
+.trainers-card {
+  background-color: var(--accent-color-variant);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.trainers-card:hover {
+  background-color: var(--accent-color);
+  border: 1px solid rgb(236, 234, 234);
+}
+
+.trainers-card img {
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.trainers-icons a {
+  color: white;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+}
+.trainers-card:hover .trainers-icons a {
+  background: var(--accent-color-variant);
+}
+
+.trainers-icons a:hover {
+  color: var(--secondary-color);
+}

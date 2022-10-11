@@ -1,0 +1,28 @@
+.our-story-img-container {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  transition: var(--transition);
+  transform: skewX(20deg);
+  animation: rotateImg 8s infinite;
+}
+.our-story-img-container:hover {
+  transform: skewX(0);
+}
+@keyframes rotateImg {
+  10% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .our-story-img-container {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    transform: skewX(0);
+  }
+}

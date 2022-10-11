@@ -1,0 +1,39 @@
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+
+.contact-icons a {
+  color: white;
+  background-color: var(--primary-color);
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 7px 2px 5px rgba(0, 0, 0, 0.8);
+  transition: var(--transition);
+}
+.contact-icons a:hover {
+  background-color: var(--accent-variant-color);
+}
+
+.contact-icons a i {
+  font-size: 2.5rem;
+  transition: var(--transition);
+  animation: rotateIcon 4s infinite;
+}
+.contact-icons a:hover i {
+  color: var(--secondary-color);
+}
+
+@keyframes rotateIcon {
+  10% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(360deg);
+  }
+}
