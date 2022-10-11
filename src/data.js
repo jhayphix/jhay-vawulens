@@ -2,23 +2,23 @@
 export const links = [
   {
     name: "ABOUT",
-    path: "/about",
+    path: "jhay-vawulens/about",
   },
   {
     name: "PLANS",
-    path: "/plans",
+    path: "jhay-vawulens/plans",
   },
   {
     name: "GALLERY",
-    path: "/gallery",
+    path: "jhay-vawulens/gallery",
   },
   {
     name: "TRAINERS",
-    path: "/trainers",
+    path: "jhay-vawulens/trainers",
   },
   {
     name: "CONTACT",
-    path: "/contact",
+    path: "jhay-vawulens/contact",
   },
 ];
 

@@ -34,7 +34,7 @@ const Navbar = () => (
         <ul className="navbar-nav">
           <li className="nav-item me-2">
             <NavLink
-              to="/"
+              to="/jhay-vawulens"
               className={({ isActive }) =>
                 isActive
                   ? "j-nav-active nav-link text-light"
